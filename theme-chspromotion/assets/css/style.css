@@ -616,6 +616,12 @@ fieldset[disabled] .form-control:focus {
     margin-left: 15px;
 }
 
+/* Google Maps ===============================================*/
+
+.googlemap{
+    width:100%;
+}
+
 
 /*	Hero	==================================================*/
 
