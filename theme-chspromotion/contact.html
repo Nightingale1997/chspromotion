@@ -31,7 +31,9 @@
 
 <body>
     <!-- Begin Hero Bg -->
-    <iframe id="parallax" section class="section googlemap" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d533.1295391208905!2d11.971787159977293!3d57.690666160762426!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ssv!2sse!4v1505919709836" height="500px" frameborder="0" style="border:0" allowfullscreen></iframe>
+    
+    
+    <iframe id="parallax" section class="section googlemap" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1066.2638944487694!2d11.971541339226803!3d57.690502494743654!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ssv!2sse!4v1506524362270" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>" height="500px" frameborder="0" style="border:0" allowfullscreen></iframe>
     <!-- End Hero Bg
 	================================================== -->
     <!-- Start Header
@@ -53,19 +55,16 @@
 
                 <ul class="nav navbar-nav">
                     <li class="">
-                        <a href="#hero">Hem</a>
+                        <a href="#hero">Karta</a>
                     </li>
-                    <li class="">
-                        <a href="#about">Om</a>
-                    </li>
-                    <li class="">
-                        <a href="#gallery">Event</a>
-                    </li>
-
                     <li class="">
                         <a href="#contactarea">Hör av dig!</a>
-
                     </li>
+                    <li class="">
+                        <a href="#gallery">Våra Medarbetare</a>
+                    </li>
+
+                   
 
 
                 </ul>
@@ -154,97 +153,80 @@
     </section>
     <!-- About
 	================================================== -->
-    <section id="about" class="parallax section" style="background-image: url(http://themepush.com/demo/runcharity/assets/img/1.jpg);">
+
+
+    <!-- Contact
+	================================================== -->
+    <section id="contactarea" class="parallax section" style="background-image: url(http://themepush.com/demo/runcharity/assets/img/map.png);">
         <div class="wrapsection">
-            <div class="parallax-overlay" style="background-color: rgb(0,153,216);opacity:0.85;"></div>
+            <div class="parallax-overlay" style="background-color: rgb(167, 192, 44);opacity:0.85;"></div>
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
-                        <!-- Title -->
                         <div class="maintitle">
-                            <h3 class="section-title"><strong>Välkommen till oss! </h3>
+                            <h3 class="section-title">Kontakta oss!</h3>
                             <p class="lead">
-                                Chalmers Studentkår Promotion är kårens arbetsmarknadsbolag. Vi ger teknologer möjlighet att få träffa sina framtida arbetsgivare och ger företag möjlighet att synas för teknologer.
+                                Har du frågor om våra events, vår verksamhet eller annat? Kontakta oss enkelt genom detta formulär!
                             </p>
                         </div>
-                    </div>
-
-                    <div class="col-md-4 col-sm-6">
-                        <div class="service-box wow flipInY" data-wow-duration="1.5s" data-wow-delay="0.1s">
-                            <span class="glyphicon glyphicon-stats"></span>
-                            <h3>Räckvidd</h3>
-                            <p>
-                                Nullam posuere, libero id interdum hendrerit, tortor nisl consectetur elit.
+                        <form id="contact" name="contact" method="post" class="text-left">
+                            <fieldset>
+                                <div class="row">
+                                    <div class="col-md-4 wow fadeIn animated animated" data-wow-delay="0.1s" data-wow-duration="2s">
+                                        <label for="name">Namn<span class="required">*</span></label>
+                                        <input type="text" name="name" id="name" size="30" value="" required/>
+                                    </div>
+                                    <div class="col-md-4 wow fadeIn animated" data-wow-delay="0.3s" data-wow-duration="2s">
+                                        <label for="email">E-Post<span class="required">*</span></label>
+                                        <input type="text" name="email" id="email" size="30" value="" required/>
+                                    </div>
+                                    <div class="col-md-4 wow fadeIn animated" data-wow-delay="0.3s" data-wow-duration="2s">
+                                        <label for="phone">Telefon</label>
+                                        <input type="text" name="phone" id="phone" size="30" value="" />
+                                    </div>
+                                </div>
+                                <div class="wow fadeIn animated" data-wow-delay="0.3s" data-wow-duration="1.5" style="margin-top:15px;">
+                                    <label for="message">Meddelande<span class="required">*</span></label>
+                                    <textarea name="message" id="message" required></textarea>
+                                </div>
+                                <div class="wow fadeIn animated" data-wow-delay="0.3" data-wow-duration="1.5s">
+                                    <input id="submit" type="submit" name="submit" value="Send" />
+                                </div>
+                            </fieldset>
+                        </form>
+                        <div id="success">
+                            <p class="contactalert">
+                                Your message was sent succssfully! I will be in touch as soon as I can.
                             </p>
-                            <button type="button" class="btn btn-info btn-md"><a href="#">Learn More</a></button>
                         </div>
-                    </div>
-                    <div class="col-md-4 col-sm-6">
-                        <div class="service-box wow flipInY" data-wow-duration="1.5s" data-wow-delay="0.2s">
-                            <span class="glyphicon glyphicon-tree-deciduous"></span>
-                            <h3>Studentdrivet</h3>
-                            <p>
-                                Nullam posuere, libero id interdum hendrerit, tortor nisl consectetur elit.
-                            </p>
-                            <button type="button" class="btn btn-info btn-md"><a href="#">Learn More</a></button>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-6">
-                        <div class="service-box wow flipInY" data-wow-duration="1.5s" data-wow-delay="0.3s">
-                            <span class="glyphicon glyphicon-heart"></span>
-                            <h3>Samarbete</h3>
-                            <p>
-                                Nullam posuere, libero id interdum hendrerit, tortor nisl consectetur elit.
-                            </p>
-                            <button type="button" class="btn btn-info btn-md"><a href="#">Learn More</a></button>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Random
-	================================================== -->
-    <section class="parallax section" style="background-image: url(assets/img/thumbs.jpg);">
-        <div class="wrapsection">
-            <div class="parallax-overlay"></div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12 sol-sm-12">
-                        <div class="maintitle">
-                            <h3 class="section-title justtitle">Var med och utvecklas!</h3>
-                            <p class="lead bottom0 wow bounceInUp">
-                                Vi ger de studenter som jobbar hos oss möjlighet att utvecklas och få värdefull erfarenhet.
+                        <div id="error">
+                            <p class="contactalert">
+                                Something went wrong, try refreshing and submitting the form again.
                             </p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        </div>
     </section>
-    <!-- Gallery
-	================================================== -->
-    <section id="gallery" class="parallax section" style="background-image: url(assets/img/Backgrounds/2.jpg);">
+    
+       <section id="gallery" class="parallax section" style="background-image: url(assets/img/Backgrounds/2.jpg);">
         <div class="wrapsection">
             <div class="parallax-overlay" style="background-color:rgb(218,26,89);opacity:0.85;"></div>
             <div class="container">
                 <div class="row">
                     <div class="col-md-12 sol-sm-12">
                         <div class="maintitle">
-                            <h3 class="section-title">Events Gallery</h3>
-                            <p class="lead wow flipInX">
-                                Have a look at your past events gallery, see how much fun we have while helping people all over the world. Join our community today!
-                            </p>
+                            <h3 class="section-title">Våra Medarbetare</h3>
+                    
                         </div>
                     </div>
 
                     <div class="col-md-4">
                         <a href="assets/img/Events/Mottagningskampen.PNG" title="This is the description">
-                            <img width="1050px" src="assets/img/Events/Mottagningskampen2.PNG" class="image-responsive">
+                            <img width="1050px" src="assets/img/team/samuel.jpg" class="image-responsive">
                             <div class="description">
-                                <span class="caption">Mottagningskampen 2017</b></span>
+                                <span class="caption">Samuel Ört <b>- VD</b></span>
                                 <span class="camera"><i class="fa fa-camera"></i></span>
                                 <div class="clearfix"></div>
                             </div>
@@ -304,112 +286,7 @@
             </div>
         </div>
     </section>
-    <!-- Text Carousel
-	================================================== -->
-    <section id="slider" class="parallax section" style="background-image: url(assets/img/backgrounds/20.jpg);">
-        <div class="wrapsection">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div id="Carousel" class="carousel slide">
-                            <ol class="carousel-indicators">
-                                <li data-target="#Carousel" data-slide-to="0" class="active"></li>
-                                <li data-target="#Carousel" data-slide-to="1"></li>
-                                <li data-target="#Carousel" data-slide-to="2"></li>
-                            </ol>
-                            <div class="carousel-inner">
-                                <div class="item active">
-                                    <blockquote>
-                                        <p class="lead">
-                                            CHS Promotion är det bästa någonsin.
-                                        </p>
-                                        <small>Mahatma Gandhi</small>
-                                    </blockquote>
-                                </div>
-                                <div class="item">
-                                    <blockquote>
-                                        <p class="lead">
-                                            Otroligt bra.
-                                        </p>
-                                        <small>Barack Obama</small>
-                                    </blockquote>
-                                </div>
-                                <div class="item">
-                                    <blockquote>
-                                        <p class="lead">
-                                            Hjälpte mig nå mina mål.
-                                        </p>
-                                        <small>Zlatan Ibrahimović</small>
-                                    </blockquote>
-                                </div>
-                            </div>
-                            <a class="left carousel-control" href="#Carousel" data-slide="prev">
-                                <span class="glyphicon glyphicon-chevron-left"></span>
-                            </a>
-                            <a class="right carousel-control" href="#Carousel" data-slide="next">
-                                <span class="glyphicon glyphicon-chevron-right"></span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact
-	================================================== -->
-    <section id="contactarea" class="parallax section" style="background-image: url(http://themepush.com/demo/runcharity/assets/img/map.png);">
-        <div class="wrapsection">
-            <div class="parallax-overlay" style="background-color: rgb(167, 192, 44);opacity:0.85;"></div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="maintitle">
-                            <h3 class="section-title">Kontakta oss!</h3>
-                            <p class="lead">
-                                Har du frågor om våra events, vår verksamhet eller annat? Kontakta oss enkelt genom detta formulär!
-                            </p>
-                        </div>
-                        <form id="contact" name="contact" method="post" class="text-left">
-                            <fieldset>
-                                <div class="row">
-                                    <div class="col-md-4 wow fadeIn animated animated" data-wow-delay="0.1s" data-wow-duration="2s">
-                                        <label for="name">Name<span class="required">*</span></label>
-                                        <input type="text" name="name" id="name" size="30" value="" required/>
-                                    </div>
-                                    <div class="col-md-4 wow fadeIn animated" data-wow-delay="0.3s" data-wow-duration="2s">
-                                        <label for="email">Email<span class="required">*</span></label>
-                                        <input type="text" name="email" id="email" size="30" value="" required/>
-                                    </div>
-                                    <div class="col-md-4 wow fadeIn animated" data-wow-delay="0.3s" data-wow-duration="2s">
-                                        <label for="phone">Phone</label>
-                                        <input type="text" name="phone" id="phone" size="30" value="" />
-                                    </div>
-                                </div>
-                                <div class="wow fadeIn animated" data-wow-delay="0.3s" data-wow-duration="1.5" style="margin-top:15px;">
-                                    <label for="message">Message<span class="required">*</span></label>
-                                    <textarea name="message" id="message" required></textarea>
-                                </div>
-                                <div class="wow fadeIn animated" data-wow-delay="0.3" data-wow-duration="1.5s">
-                                    <input id="submit" type="submit" name="submit" value="Send" />
-                                </div>
-                            </fieldset>
-                        </form>
-                        <div id="success">
-                            <p class="contactalert">
-                                Your message was sent succssfully! I will be in touch as soon as I can.
-                            </p>
-                        </div>
-                        <div id="error">
-                            <p class="contactalert">
-                                Something went wrong, try refreshing and submitting the form again.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    
     <!-- Credits 
 =============================================== -->
     <section id="credits" class="text-center">
